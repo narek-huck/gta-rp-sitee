@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STATE RP — Играй по своим правилам</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--orange:#ff7628;--bg:#0b0d12;--panel:#141821;--muted:#a0a8b8}
+body{font-family:Arial,sans-serif;background:var(--bg);color:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 8%;background:#10131bf2;border-bottom:1px solid #ffffff12;position:sticky;top:0;z-index:5}
+.logo{font-size:24px;font-weight:900;letter-spacing:2px}.logo span{color:var(--orange)}
+nav{display:flex;gap:24px;font-size:14px;color:#d4d7df}
+nav a:hover{color:var(--orange)}
+.btn{display:inline-block;padding:12px 22px;background:var(--orange);border-radius:5px;font-weight:bold;color:#111;transition:.2s;border:0;cursor:pointer}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.hero{min-height:570px;padding:110px 8%;display:flex;align-items:center;background:linear-gradient(90deg,#0b0d12 5%,#0b0d12dc 45%,#0b0d1240),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:650px}
+.tag{color:var(--orange);font-size:12px;letter-spacing:4px;font-weight:bold}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin:20px 0}
+h1 span{color:var(--orange)}
+.hero p{color:#c4c9d3;max-width:520px;margin-bottom:28px}
+section{padding:75px 8%}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
+h2{font-size:32px}.sub{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--panel);border:1px solid #ffffff12;border-radius:9px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#ff762855}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:22px}.date{color:var(--orange);font-size:12px;font-weight:bold}
+h3{margin:8px 0;font-size:19px}.card p{color:var(--muted);font-size:14px}
+.features{background:#10131a}
+.feature{padding:25px;background:#171b24;border-radius:8px}
+.feature .num{font-size:30px;color:var(--orange);font-weight:900}
+.feature p{color:var(--muted);font-size:14px;margin-top:8px}
+.join{margin:0 8% 75px;padding:55px 30px;text-align:center;border-radius:12px;background:linear-gradient(110deg,#ff7628,#ffb14a);color:#111}
+.join p{margin:10px 0 24px}
+.join .btn{background:#10131a;color:#fff}
+footer{padding:28px 8%;border-top:1px solid #ffffff15;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){header{padding:15px 5%;height:auto;flex-wrap:wrap;gap:12px}nav{order:3;width:100%;overflow:auto;padding:5px 0}.hero{padding:80px 6%;min-height:500px}section{padding:55px 6%}.grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.join{margin:0 6% 50px}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#">STATE<span> RP</span></a>
+<nav>
+<a href="#home">Главная</a>
+<a href="#news">Новости</a>
+<a href="#features">Возможности</a>
+<a href="#forum">Форум</a>
+</nav>
+<a class="btn" href="#join">Начать игру</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="tag">ТВОЯ ИСТОРИЯ НАЧИНАЕТСЯ ЗДЕСЬ</div>
+<h1>ТВОЙ ГОРОД.<br>ТВОИ <span>ПРАВИЛА.</span></h1>
+<p>Создай собственную историю в мире, где каждое решение имеет значение. Выбирай свой путь, находи друзей и стань легендой города.</p>
+<a class="btn" href="#join">Присоединиться →</a>
+</div>
+</section>
+
+<section id="news">
+<div class="section-head">
+<div><div class="tag">БУДЬ В КУРСЕ</div><h2>Последние новости</h2></div>
